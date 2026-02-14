@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "herd-store-duckdb"
+version = "0.1.0"
+description = "Herd storage adapter for DuckDB — implements StoreAdapter protocol."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Faust Eriksen" }]
+keywords = ["ai", "agents", "herd", "duckdb", "storage"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = ["herd-core>=0.0.1", "duckdb>=1.0"]
+
+[project.urls]
+Repository = "https://github.com/dbt-conceptual/herd-store-duckdb"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
